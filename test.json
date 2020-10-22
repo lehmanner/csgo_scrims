@@ -1,0 +1,74 @@
+"Match"
+{
+	"matchid"		"SEL_OD_Match1"
+	"num_maps"		"2" // Must be an odd number or 2. 1->Bo1, 2->Bo2, 3->Bo3, etc.
+
+	"spectators" 	// players allowed in spectator (e.g., admins) should go here
+	{
+		"players"
+		{
+			"STEAM_1:1:....."		""
+			"STEAM_1:1:....."		""
+			"STEAM_1:1:....."		""
+		}
+	}
+
+	"skip_veto"		"0" // If set to 1, the maps will be preset using the first maps in the maplist below.
+	"veto_first"	"team1"  // Set to "team1" or "team2" to select who starts the veto. Any other values will default to team1 starting.
+	"side_type"		"standard" // Either "standard", "always_knife", or "never_knife"
+
+	"maplist"
+	{
+		"de_dust2"			""
+		"de_inferno"		""
+		"de_mirage"			""
+		"de_nuke"			""
+		"de_overpass"		""
+		"de_train"			""
+		"de_vertigo"		""
+	}
+
+	"players_per_team"		"5"
+	"min_players_to_ready"		"5"
+	"min_spectators_to_ready"		"0" // How many spectators must be ready to begin.
+
+
+	"team1"
+	{
+		"name"		"Bambusbjörns"
+		"tag"		"BaBjö"  // Short tags replace the "clan tag" on the scoreboard. They are optional.
+		"flag"		"CH"
+		"logo"		"nv"
+		"players"
+		{
+			"STEAM_1:0:131769222"           "J'"
+			"STEAM_1:1:52272799"            "Gardox"
+			"STEAM_0:1:244427922"           "Leirox"
+			"STEAM_0:1:97060719"            "hsm192"
+			"STEAM_1:1:176076389"           "iMoe"
+		}
+	}
+
+	"team2"
+	{
+		"name"		"Guest"
+		"tag"		"Gst"
+		"flag"		"CH"
+		"logo"		"fntc"
+		"players"
+		{
+			"STEAM_1:1:46796472"		""
+			"STEAM_1:0:78189799"		""
+			"STEAM_1:0:142982"		""
+			"STEAM_1:1:....."		""
+			"STEAM_1:1:....."		""
+		}
+	}
+
+	// These will be executed on each map start or config load.
+	// You should not use this as a replacement for the cfg/get5/live.cfg config.
+	"cvars"
+	{
+		"hostname"		"Match server #1"
+	}
+}
